@@ -1,0 +1,1146 @@
+[
+  {
+    "text": "Which Python function converts a string to all lowercase characters?",
+    "category": "python",
+    "difficulty": "beginner",
+    "explanation": "The lower() method returns a copy of the string in which all case-based characters have been lowercased.",
+    "choices": [
+      {
+        "text": "casefold()",
+        "is_correct": false
+      },
+      {
+        "text": "lower()",
+        "is_correct": true
+      },
+      {
+        "text": "strip()",
+        "is_correct": false
+      },
+      {
+        "text": "upper()",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the output of print(type([])) in Python?",
+    "category": "python",
+    "difficulty": "beginner",
+    "explanation": "The square brackets [] denote a list object in Python, so its type is <class 'list'>.",
+    "choices": [
+      {
+        "text": "list",
+        "is_correct": true
+      },
+      {
+        "text": "dict",
+        "is_correct": false
+      },
+      {
+        "text": "tuple",
+        "is_correct": false
+      },
+      {
+        "text": "set",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which of the following is true about Python dictionary key insertion order preservation since version 3.7?",
+    "category": "python",
+    "difficulty": "intermediate",
+    "explanation": "Since Python 3.7, dictionaries are officially guaranteed to preserve the insertion order of keys.",
+    "choices": [
+      {
+        "text": "Keys are sorted alphabetically",
+        "is_correct": false
+      },
+      {
+        "text": "Keys preserve insertion order",
+        "is_correct": true
+      },
+      {
+        "text": "Order is completely random",
+        "is_correct": false
+      },
+      {
+        "text": "Insertion order is preserved only for string keys",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the purpose of the __init__ method in Python classes?",
+    "category": "python",
+    "difficulty": "intermediate",
+    "explanation": "The __init__ method is a special method (initializer) called automatically when a new object instance of a class is created.",
+    "choices": [
+      {
+        "text": "To initialize a class instance",
+        "is_correct": true
+      },
+      {
+        "text": "To delete an instance",
+        "is_correct": false
+      },
+      {
+        "text": "To compile the class code",
+        "is_correct": false
+      },
+      {
+        "text": "To declare class variables",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "In Python, which metaclass method is called to control the creation and allocation of a new class object?",
+    "category": "python",
+    "difficulty": "advanced",
+    "explanation": "The __new__ method is a static method responsible for creating and returning a new instance of the class, whereas __init__ initializes it.",
+    "choices": [
+      {
+        "text": "__new__",
+        "is_correct": true
+      },
+      {
+        "text": "__init__",
+        "is_correct": false
+      },
+      {
+        "text": "__call__",
+        "is_correct": false
+      },
+      {
+        "text": "__prepare__",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the primary difference between a thread and a process in Python's default CPython implementation?",
+    "category": "python",
+    "difficulty": "advanced",
+    "explanation": "Processes can run in parallel across multiple CPU cores because each process gets its own Python interpreter and memory space, bypassing GIL restrictions. Threads share memory but are constrained by the Global Interpreter Lock (GIL) to execute on a single core.",
+    "choices": [
+      {
+        "text": "Threads can run in parallel on multiple CPU cores due to GIL",
+        "is_correct": false
+      },
+      {
+        "text": "Threads share the same memory space while processes have separate memory spaces and are limited by GIL",
+        "is_correct": false
+      },
+      {
+        "text": "Processes share the same memory space while threads have separate memory spaces",
+        "is_correct": false
+      },
+      {
+        "text": "Processes can bypass the GIL and run on multiple CPU cores in parallel, whereas threads are restricted by the GIL to a single core",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "text": "Which SQL clause is used to filter records in a SELECT query before grouping?",
+    "category": "sql",
+    "difficulty": "beginner",
+    "explanation": "The WHERE clause filters individual rows before any grouping or aggregation by GROUP BY happens.",
+    "choices": [
+      {
+        "text": "WHERE",
+        "is_correct": true
+      },
+      {
+        "text": "GROUP BY",
+        "is_correct": false
+      },
+      {
+        "text": "ORDER BY",
+        "is_correct": false
+      },
+      {
+        "text": "HAVING",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What does the SQL 'JOIN' clause do?",
+    "category": "sql",
+    "difficulty": "beginner",
+    "explanation": "A JOIN clause is used to combine rows from two or more tables based on a related column between them.",
+    "choices": [
+      {
+        "text": "Combines rows from tables based on a related column",
+        "is_correct": true
+      },
+      {
+        "text": "Deletes data from multiple tables",
+        "is_correct": false
+      },
+      {
+        "text": "Sorts table rows in ascending order",
+        "is_correct": false
+      },
+      {
+        "text": "Groups rows together for aggregation",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which SQL join returns all rows from the left table, and the matched rows from the right table?",
+    "category": "sql",
+    "difficulty": "intermediate",
+    "explanation": "A LEFT JOIN returns all rows from the left table and matched rows from the right table; unmatched right-side values will be NULL.",
+    "choices": [
+      {
+        "text": "INNER JOIN",
+        "is_correct": false
+      },
+      {
+        "text": "RIGHT JOIN",
+        "is_correct": false
+      },
+      {
+        "text": "LEFT JOIN",
+        "is_correct": true
+      },
+      {
+        "text": "FULL OUTER JOIN",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which aggregate function in SQL is used to count the number of rows?",
+    "category": "sql",
+    "difficulty": "intermediate",
+    "explanation": "COUNT() returns the number of rows that match specified criteria in the query.",
+    "choices": [
+      {
+        "text": "SUM()",
+        "is_correct": false
+      },
+      {
+        "text": "COUNT()",
+        "is_correct": true
+      },
+      {
+        "text": "AVG()",
+        "is_correct": false
+      },
+      {
+        "text": "MAX()",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the primary difference between SQL aggregate functions and window functions?",
+    "category": "sql",
+    "difficulty": "advanced",
+    "explanation": "Aggregate functions collapse rows into a single output row, while window functions perform calculations across related rows without collapsing them, retaining individual row identities.",
+    "choices": [
+      {
+        "text": "Window functions group rows into a single output row, whereas aggregate functions retain individual row identities",
+        "is_correct": false
+      },
+      {
+        "text": "Aggregate functions collapse rows into a single output row, while window functions perform calculations across related rows without collapsing them",
+        "is_correct": true
+      },
+      {
+        "text": "Window functions only work with SQLite while aggregate functions work with all databases",
+        "is_correct": false
+      },
+      {
+        "text": "Aggregate functions require indexes, whereas window functions do not",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which Python library is primarily used for manipulating tabular data in Data Science?",
+    "category": "data_science",
+    "difficulty": "beginner",
+    "explanation": "Pandas is the core Python data manipulation library that introduces DataFrames and Series for working with structured data.",
+    "choices": [
+      {
+        "text": "NumPy",
+        "is_correct": false
+      },
+      {
+        "text": "Pandas",
+        "is_correct": true
+      },
+      {
+        "text": "Matplotlib",
+        "is_correct": false
+      },
+      {
+        "text": "SciPy",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "In Pandas, which function is used to read a CSV file into a DataFrame?",
+    "category": "data_science",
+    "difficulty": "beginner",
+    "explanation": "The pd.read_csv() function parses a CSV file and loads it into a Pandas DataFrame.",
+    "choices": [
+      {
+        "text": "read_json()",
+        "is_correct": false
+      },
+      {
+        "text": "read_table()",
+        "is_correct": false
+      },
+      {
+        "text": "read_csv()",
+        "is_correct": true
+      },
+      {
+        "text": "to_csv()",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the main purpose of exploratory data analysis (EDA) in data science?",
+    "category": "data_science",
+    "difficulty": "intermediate",
+    "explanation": "EDA is performed to inspect and summarize the main characteristics of a dataset, identify patterns, and find anomalies before modeling.",
+    "choices": [
+      {
+        "text": "To deploy models to production",
+        "is_correct": false
+      },
+      {
+        "text": "To clean and summarize data characteristics before modeling",
+        "is_correct": true
+      },
+      {
+        "text": "To train deep learning neural networks",
+        "is_correct": false
+      },
+      {
+        "text": "To encrypt user data",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the primary purpose of data normalization or standardization?",
+    "category": "data_science",
+    "difficulty": "intermediate",
+    "explanation": "Normalization scales features to a uniform range to prevent features with larger scales from dominating optimization steps.",
+    "choices": [
+      {
+        "text": "To reduce dataset size",
+        "is_correct": false
+      },
+      {
+        "text": "To scale numerical features to a uniform range to prevent dominant features",
+        "is_correct": true
+      },
+      {
+        "text": "To convert numerical columns to categorical values",
+        "is_correct": false
+      },
+      {
+        "text": "To encrypt features for secure transmission",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which metric should be prioritized when evaluating a classifier on a highly imbalanced dataset where false negatives are critical?",
+    "category": "data_science",
+    "difficulty": "advanced",
+    "explanation": "Recall measures the model's ability to identify all positive instances, which is critical when false negatives carry severe consequences.",
+    "choices": [
+      {
+        "text": "Accuracy",
+        "is_correct": false
+      },
+      {
+        "text": "Recall",
+        "is_correct": true
+      },
+      {
+        "text": "Precision",
+        "is_correct": false
+      },
+      {
+        "text": "R-squared",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the difference between supervised and unsupervised learning?",
+    "category": "machine_learning",
+    "difficulty": "beginner",
+    "explanation": "Supervised learning models are trained on datasets containing explicit input-output labels, whereas unsupervised learning finds patterns in unlabeled data.",
+    "choices": [
+      {
+        "text": "Supervised uses labeled data; unsupervised uses unlabeled data",
+        "is_correct": true
+      },
+      {
+        "text": "Supervised is for clustering; unsupervised is for regression",
+        "is_correct": false
+      },
+      {
+        "text": "Supervised doesn't need training; unsupervised does",
+        "is_correct": false
+      },
+      {
+        "text": "Supervised only works on numbers; unsupervised works on text",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which algorithm is a popular tree-based ensemble method used for classification and regression?",
+    "category": "machine_learning",
+    "difficulty": "beginner",
+    "explanation": "Random Forest is an ensemble learning method that operates by constructing multiple decision trees during training.",
+    "choices": [
+      {
+        "text": "Linear Regression",
+        "is_correct": false
+      },
+      {
+        "text": "K-Means",
+        "is_correct": false
+      },
+      {
+        "text": "Random Forest",
+        "is_correct": true
+      },
+      {
+        "text": "Support Vector Machine",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is overfitting in machine learning?",
+    "category": "machine_learning",
+    "difficulty": "intermediate",
+    "explanation": "Overfitting occurs when a model learns the details and noise in the training data to the extent that it negatively impacts the model's performance on new data.",
+    "choices": [
+      {
+        "text": "When the model performs well on test data but poorly on training data",
+        "is_correct": false
+      },
+      {
+        "text": "When the model learns noise and details from the training data too well, failing to generalize to unseen data",
+        "is_correct": true
+      },
+      {
+        "text": "When the model cannot learn the underlying patterns in the training data",
+        "is_correct": false
+      },
+      {
+        "text": "When the dataset is too small for the model to train",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which metric evaluates the performance of a regression model by representing the average squared difference between predictions and actual values?",
+    "category": "machine_learning",
+    "difficulty": "intermediate",
+    "explanation": "Mean Squared Error (MSE) measures the average of the squares of the errors (the average squared difference between estimated values and actual values).",
+    "choices": [
+      {
+        "text": "Accuracy",
+        "is_correct": false
+      },
+      {
+        "text": "Mean Squared Error (MSE)",
+        "is_correct": true
+      },
+      {
+        "text": "Precision",
+        "is_correct": false
+      },
+      {
+        "text": "F1-Score",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "In machine learning, what does L1 regularization (Lasso) do that L2 regularization (Ridge) does not?",
+    "category": "machine_learning",
+    "difficulty": "advanced",
+    "explanation": "L1 regularization adds an absolute value penalty which drives less important feature weights to exactly zero, performing feature selection.",
+    "choices": [
+      {
+        "text": "It makes all weights zero",
+        "is_correct": false
+      },
+      {
+        "text": "It encourages sparsity by driving some coefficient weights to exactly zero",
+        "is_correct": true
+      },
+      {
+        "text": "It increases model complexity",
+        "is_correct": false
+      },
+      {
+        "text": "It uses the square of the weights in its penalty term",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the primary function of an activation function in a neural network?",
+    "category": "deep_learning",
+    "difficulty": "beginner",
+    "explanation": "An activation function introduces non-linear properties to the neural network, allowing it to learn complex non-linear relationships.",
+    "choices": [
+      {
+        "text": "To introduce non-linearity into the network",
+        "is_correct": true
+      },
+      {
+        "text": "To normalize input data",
+        "is_correct": false
+      },
+      {
+        "text": "To calculate the learning rate",
+        "is_correct": false
+      },
+      {
+        "text": "To initialize weights randomly",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which optimization algorithm is widely used in deep learning to dynamically adjust learning rates per parameter?",
+    "category": "deep_learning",
+    "difficulty": "intermediate",
+    "explanation": "Adam (Adaptive Moment Estimation) dynamically adjusts learning rates using running averages of both the first and second moments of the gradients.",
+    "choices": [
+      {
+        "text": "SGD",
+        "is_correct": false
+      },
+      {
+        "text": "Adam",
+        "is_correct": true
+      },
+      {
+        "text": "Adagrad",
+        "is_correct": false
+      },
+      {
+        "text": "RMSprop",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the primary purpose of a Convolutional Neural Network (CNN) in deep learning?",
+    "category": "deep_learning",
+    "difficulty": "intermediate",
+    "explanation": "CNNs utilize convolutional layers to extract spatial hierarchies of features from images, making them highly effective for computer vision.",
+    "choices": [
+      {
+        "text": "To handle sequential data like text or time series",
+        "is_correct": false
+      },
+      {
+        "text": "To process grid-like topology data such as images through spatial hierarchy learning",
+        "is_correct": true
+      },
+      {
+        "text": "To run tabular regression tasks",
+        "is_correct": false
+      },
+      {
+        "text": "To model graph relationships",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What mechanism does the Transformer architecture use to weigh the relevance of different words in a sequence regardless of their distance?",
+    "category": "deep_learning",
+    "difficulty": "advanced",
+    "explanation": "Self-attention computes dynamic weights reflecting correlation levels between different token positions in a sequence.",
+    "choices": [
+      {
+        "text": "Backpropagation",
+        "is_correct": false
+      },
+      {
+        "text": "Self-Attention",
+        "is_correct": true
+      },
+      {
+        "text": "Recurrence",
+        "is_correct": false
+      },
+      {
+        "text": "Pooling",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which command-line interface server is commonly used to run FastAPI applications?",
+    "category": "fastapi",
+    "difficulty": "beginner",
+    "explanation": "Uvicorn is an ASGI web server implementation for Python, used to serve FastAPI apps.",
+    "choices": [
+      {
+        "text": "Nginx",
+        "is_correct": false
+      },
+      {
+        "text": "Uvicorn",
+        "is_correct": true
+      },
+      {
+        "text": "Apache",
+        "is_correct": false
+      },
+      {
+        "text": "Gunicorn only",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What Pydantic feature does FastAPI use for body parameters validation?",
+    "category": "fastapi",
+    "difficulty": "beginner",
+    "explanation": "FastAPI leverages Pydantic models (subclassing BaseModel) to define request schemas and automatically validate request bodies.",
+    "choices": [
+      {
+        "text": "BaseModel",
+        "is_correct": true
+      },
+      {
+        "text": "Field",
+        "is_correct": false
+      },
+      {
+        "text": "ConfigDict",
+        "is_correct": false
+      },
+      {
+        "text": "BaseSettings",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "How do you define query parameters in a FastAPI route handler function?",
+    "category": "fastapi",
+    "difficulty": "intermediate",
+    "explanation": "Parameters declared in route functions that are not part of the path configuration are parsed as query parameters.",
+    "choices": [
+      {
+        "text": "By declaring them in the path decorator string",
+        "is_correct": false
+      },
+      {
+        "text": "By declaring them as function parameters not included in the path",
+        "is_correct": true
+      },
+      {
+        "text": "By reading raw requests using a custom parser",
+        "is_correct": false
+      },
+      {
+        "text": "By creating a dedicated database table",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the purpose of FastAPI's dependency injection system (Depends)?",
+    "category": "fastapi",
+    "difficulty": "intermediate",
+    "explanation": "FastAPI's dependency injection system allows developers to reuse setup logic (like DB connections, auth rules, or security checks) across endpoints easily.",
+    "choices": [
+      {
+        "text": "To import external python packages",
+        "is_correct": false
+      },
+      {
+        "text": "To share database sessions, security requirements, and reusable logic across endpoints",
+        "is_correct": true
+      },
+      {
+        "text": "To run background tasks asynchronously",
+        "is_correct": false
+      },
+      {
+        "text": "To serialize database models to JSON",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "In FastAPI, how do you execute operations right before the application starts up or after it shuts down?",
+    "category": "fastapi",
+    "difficulty": "advanced",
+    "explanation": "The lifespan context manager allows defining startup and shutdown logic for the application instance.",
+    "choices": [
+      {
+        "text": "Using class decorators on controllers",
+        "is_correct": false
+      },
+      {
+        "text": "Using the lifespan async context manager parameter on the FastAPI app",
+        "is_correct": true
+      },
+      {
+        "text": "Using standard thread locks",
+        "is_correct": false
+      },
+      {
+        "text": "By calling app.run() inside a while loop",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What does the cloud computing term 'IaaS' stand for?",
+    "category": "cloud",
+    "difficulty": "beginner",
+    "explanation": "IaaS stands for Infrastructure as a Service, providing virtualized computing resources over the internet.",
+    "choices": [
+      {
+        "text": "Infrastructure as a Service",
+        "is_correct": true
+      },
+      {
+        "text": "Integration as a Service",
+        "is_correct": false
+      },
+      {
+        "text": "Information as a Service",
+        "is_correct": false
+      },
+      {
+        "text": "Internet as a Service",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which AWS service is commonly used for scalable object storage?",
+    "category": "cloud",
+    "difficulty": "beginner",
+    "explanation": "Amazon Simple Storage Service (S3) provides highly durable, scalable, and secure object storage.",
+    "choices": [
+      {
+        "text": "EC2",
+        "is_correct": false
+      },
+      {
+        "text": "S3",
+        "is_correct": true
+      },
+      {
+        "text": "RDS",
+        "is_correct": false
+      },
+      {
+        "text": "DynamoDB",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the main benefit of serverless computing (like AWS Lambda) in cloud environments?",
+    "category": "cloud",
+    "difficulty": "intermediate",
+    "explanation": "Serverless architectures dynamically manage and scale container execution based on real demand, billing only for compute time consumed.",
+    "choices": [
+      {
+        "text": "It runs on physical servers that the user must maintain",
+        "is_correct": false
+      },
+      {
+        "text": "It scales automatically and users only pay for active execution time without provisioning servers",
+        "is_correct": true
+      },
+      {
+        "text": "It is cheaper for long-running, constant-load background processes",
+        "is_correct": false
+      },
+      {
+        "text": "It provides dedicated virtual machines with static IPs",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which cloud architecture pattern ensures application availability and fault tolerance across a region?",
+    "category": "cloud",
+    "difficulty": "advanced",
+    "explanation": "Multi-AZ deployments distribute workload instances across distinct physical data centers inside a region to safeguard against failures.",
+    "choices": [
+      {
+        "text": "Single availability zone deployment with vertical scaling",
+        "is_correct": false
+      },
+      {
+        "text": "Multi-Availability Zone (Multi-AZ) deployment behind a load balancer",
+        "is_correct": true
+      },
+      {
+        "text": "Local hosting with cloud backups",
+        "is_correct": false
+      },
+      {
+        "text": "Shared database connection pooling across multiple regions without replication",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What does 'LLM' stand for in Generative AI?",
+    "category": "generative_ai",
+    "difficulty": "beginner",
+    "explanation": "LLM stands for Large Language Model, representing neural networks trained on vast textual datasets.",
+    "choices": [
+      {
+        "text": "Logic Learning Machine",
+        "is_correct": false
+      },
+      {
+        "text": "Large Language Model",
+        "is_correct": true
+      },
+      {
+        "text": "Linear Latent Model",
+        "is_correct": false
+      },
+      {
+        "text": "Layered Language Matrix",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is the purpose of Retrieval-Augmented Generation (RAG)?",
+    "category": "generative_ai",
+    "difficulty": "intermediate",
+    "explanation": "RAG pulls relevant context from an external datastore and injects it into the prompt to provide factual basis for LLM generations.",
+    "choices": [
+      {
+        "text": "To train a model from scratch on private data",
+        "is_correct": false
+      },
+      {
+        "text": "To supply LLMs with external, dynamic, and factual context to reduce hallucinations and ground answers",
+        "is_correct": true
+      },
+      {
+        "text": "To speed up prompt generation in the UI",
+        "is_correct": false
+      },
+      {
+        "text": "To compress LLM models into smaller file formats",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is 'hallucination' in the context of Large Language Models?",
+    "category": "generative_ai",
+    "difficulty": "intermediate",
+    "explanation": "Hallucination refers to a phenomenon where an LLM generates text that is syntactically correct but factually incorrect or fabricated.",
+    "choices": [
+      {
+        "text": "When the model runs out of GPU memory",
+        "is_correct": false
+      },
+      {
+        "text": "When the model generates plausible-sounding but factually incorrect or fabricated information",
+        "is_correct": true
+      },
+      {
+        "text": "When the model refuses to answer a prompt",
+        "is_correct": false
+      },
+      {
+        "text": "When the model gets stuck in an infinite loop",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What technique adjusts the weights of a pre-trained LLM on a specific domain dataset using parameter-efficient methods like LoRA?",
+    "category": "generative_ai",
+    "difficulty": "advanced",
+    "explanation": "Fine-tuning updates a pre-trained model's internal parameters on structured domain data. LoRA does this with low-rank adapters.",
+    "choices": [
+      {
+        "text": "Zero-shot learning",
+        "is_correct": false
+      },
+      {
+        "text": "Fine-tuning",
+        "is_correct": true
+      },
+      {
+        "text": "Prompt engineering",
+        "is_correct": false
+      },
+      {
+        "text": "Vector search indexing",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is a key defining characteristic of Agentic AI compared to standard Generative AI?",
+    "category": "agentic_ai",
+    "difficulty": "beginner",
+    "explanation": "Agentic AI operates with independent planning, tool usage, goal orientation, and iterative execution loops.",
+    "choices": [
+      {
+        "text": "It only answers in code blocks",
+        "is_correct": false
+      },
+      {
+        "text": "It possesses autonomy to plan, make decisions, use tools, and act to achieve goals",
+        "is_correct": true
+      },
+      {
+        "text": "It is hosted on physical on-premises servers only",
+        "is_correct": false
+      },
+      {
+        "text": "It has more parameters in its model layer",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "In agentic systems, what is the role of a tool or function execution?",
+    "category": "agentic_ai",
+    "difficulty": "intermediate",
+    "explanation": "Tools allow agents to perform actions in external environments (e.g. read files, call APIs, run commands).",
+    "choices": [
+      {
+        "text": "To visualize neural network weights",
+        "is_correct": false
+      },
+      {
+        "text": "To allow the agent to interact with external environments, databases, and APIs",
+        "is_correct": true
+      },
+      {
+        "text": "To compile Python scripts to C binaries",
+        "is_correct": false
+      },
+      {
+        "text": "To encrypt message payloads",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which loop pattern is commonly used by Agentic AI to recursively observe, orient, decide, and act to solve a complex task?",
+    "category": "agentic_ai",
+    "difficulty": "advanced",
+    "explanation": "The Reasoning loop (like ReAct) iteratively performs reflection, executes actions via tools, and integrates observations to complete tasks.",
+    "choices": [
+      {
+        "text": "Model training loop",
+        "is_correct": false
+      },
+      {
+        "text": "Reasoning loop (such as ReAct: Reason-Act-Observe)",
+        "is_correct": true
+      },
+      {
+        "text": "Database connection pool loop",
+        "is_correct": false
+      },
+      {
+        "text": "HTTP request-response cycle",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "What is an invalid question for testing validation purposes?",
+    "category": "python",
+    "difficulty": "beginner",
+    "explanation": "This question has no correct answer.",
+    "choices": [
+      {
+        "text": "Option A",
+        "is_correct": false
+      },
+      {
+        "text": "Option B",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which built-in Python function converts a list into unique elements?",
+    "category": "python",
+    "difficulty": "beginner",
+    "explanation": "The set() function removes duplicates.",
+    "choices": [
+      {
+        "text": "set()",
+        "is_correct": true
+      },
+      {
+        "text": "list()",
+        "is_correct": false
+      },
+      {
+        "text": "unique()",
+        "is_correct": false
+      },
+      {
+        "text": "distinct()",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which JOIN returns matching rows from both tables?",
+    "category": "sql",
+    "difficulty": "beginner",
+    "explanation": "INNER JOIN returns only matching rows.",
+    "choices": [
+      {
+        "text": "INNER JOIN",
+        "is_correct": true
+      },
+      {
+        "text": "LEFT JOIN",
+        "is_correct": false
+      },
+      {
+        "text": "RIGHT JOIN",
+        "is_correct": false
+      },
+      {
+        "text": "FULL JOIN",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which data structure follows the LIFO principle?",
+    "category": "dsa",
+    "difficulty": "beginner",
+    "explanation": "Stack uses Last In First Out.",
+    "choices": [
+      {
+        "text": "Stack",
+        "is_correct": true
+      },
+      {
+        "text": "Queue",
+        "is_correct": false
+      },
+      {
+        "text": "Tree",
+        "is_correct": false
+      },
+      {
+        "text": "Graph",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which keyword is used to handle exceptions in Python?",
+    "category": "python",
+    "difficulty": "beginner",
+    "explanation": "try-except handles exceptions.",
+    "choices": [
+      {
+        "text": "try",
+        "is_correct": true
+      },
+      {
+        "text": "catch",
+        "is_correct": false
+      },
+      {
+        "text": "handle",
+        "is_correct": false
+      },
+      {
+        "text": "error",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which SQL clause filters grouped records?",
+    "category": "sql",
+    "difficulty": "intermediate",
+    "explanation": "HAVING filters after GROUP BY.",
+    "choices": [
+      {
+        "text": "HAVING",
+        "is_correct": true
+      },
+      {
+        "text": "WHERE",
+        "is_correct": false
+      },
+      {
+        "text": "ORDER BY",
+        "is_correct": false
+      },
+      {
+        "text": "LIMIT",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "text": "Which traversal visits Root, Left, Right?",
+    "category": "dsa",
+    "difficulty": "intermediate",
+    "explanation": "Preorder is Root-Left-Right.",
+    "choices": [
+      {
+        "text": "Preorder",
+        "is_correct": true
+      },
+      {
+        "text": "Inorder",
+        "is_correct": false
+      },
+      {
+        "text": "Postorder",
+        "is_correct": false
+      },
+      {
+        "text": "Level Order",
+        "is_correct": false
+      }
+    ]
+  }
+]

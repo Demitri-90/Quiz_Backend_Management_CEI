@@ -1,0 +1,47 @@
+{
+  "info": {
+    "name": "Celebal Quiz Backend API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "base_url", "value": "http://127.0.0.1:8000"}
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {"method": "GET", "url": "{{base_url}}/health"}
+    },
+    {
+      "name": "Create Question",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"question_text\": \"Which framework powers this API?\",\n  \"category\": \"FastAPI\",\n  \"difficulty\": \"easy\",\n  \"choices\": [\n    {\"choice_text\": \"FastAPI\", \"is_correct\": true},\n    {\"choice_text\": \"Laravel\", \"is_correct\": false}\n  ]\n}"
+        },
+        "url": "{{base_url}}/questions"
+      }
+    },
+    {
+      "name": "Get Questions",
+      "request": {"method": "GET", "url": "{{base_url}}/questions"}
+    },
+    {
+      "name": "Start Quiz",
+      "request": {"method": "GET", "url": "{{base_url}}/quiz/start?limit=5"}
+    },
+    {
+      "name": "Submit Quiz",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"answers\": [\n    {\"question_id\": 1, \"choice_id\": 1}\n  ]\n}"
+        },
+        "url": "{{base_url}}/quiz/submit"
+      }
+    }
+  ]
+}

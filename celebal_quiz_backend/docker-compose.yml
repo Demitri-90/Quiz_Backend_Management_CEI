@@ -1,0 +1,12 @@
+services:
+  quiz-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: sqlite:////app/data/quiz.db
+    volumes:
+      - quiz_data:/app/data
+
+volumes:
+  quiz_data:
